@@ -1,0 +1,481 @@
+section {
+	padding-bottom: 3em;
+}
+
+section h1 {
+	font-size: 5em;
+	text-align: center;
+	margin: 0.5em 0;
+}
+
+section p {
+	font-size: 1.2em;
+	line-height: 150%;
+	text-align: justify;
+	text-indent: 1em;
+}
+
+/* DOMU - onas*/
+
+section>.domu .onas {
+	display: flex;
+	justify-content: center;
+}
+
+section>.domu .onas .boxy {
+	display: flex;
+	justify-content: space-between;
+	margin: 3em 0;
+
+}
+
+section>.domu .onas .boxy .karta {
+	flex-basis: 0;
+	text-align: center;
+}
+
+section>.domu .onas .boxy .karta h2 {
+	font-size: 2em;
+	margin: 1em 0;
+	border-bottom: 1px solid black;
+	padding-bottom: 0.5em;
+	display: inline-block;
+}
+
+section>.domu .onas .boxy .karta a {
+	text-decoration: none;
+	color: black;
+	padding: 1em 2em;
+	border: 1px solid rgb(189, 189, 189);
+	border-radius: 10px;
+	display: inline-block;
+	margin-top: 3em;
+}
+
+section>.domu .onas .boxy .karta a:hover {
+	border: 1px solid black;
+	transition: all 0.5s ease;
+}
+
+section>.domu .onas .boxy .karta a i {
+	margin-left: 1em;
+	transition: all 0.5s ease;
+}
+
+section>.domu .onas .boxy .karta a:hover i {
+	transform: translateX(10px);
+}
+
+@media (max-width: 1035px) {
+
+
+	section>.domu .onas .boxy {
+		flex-direction: column;
+		row-gap: 4em;
+	}
+
+	section>.domu .onas .boxy .karta {
+		display: flex;
+		column-gap: 2em;
+	}
+
+	section>.domu .onas .boxy .karta h2 {
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 700px) {
+	section>.domu .onas .boxy .karta {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	section>.domu .onas .boxy .karta h2 {
+		margin-top: 1em;
+	}
+}
+
+/* DOMU - akce*/
+
+section>.domu .akce {
+	display: flex;
+	margin-top: 1em;
+}
+
+section>.domu .akce .levy {
+	width: 50%;
+	background-color: #A0785D;
+	display: flex;
+	justify-content: flex-end;
+	padding: 2em;
+	text-align: right;
+	color: white;
+}
+
+section>.domu .akce .levy .boxy {
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5em;
+
+}
+
+section>.domu .akce .levy .boxy h2 {
+	margin: 0.5em;
+	font-size: 2em;
+}
+
+
+section>.domu .akce .pravy {
+	width: 50%;
+	background: url(../img/zrnka-kavy.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	display: flex;
+}
+
+section>.domu .akce .pravy .lista {
+	background-color: rgb(160, 120, 93, 0.7);
+	width: 20%;
+}
+
+@media (max-width: 700px) {
+	section>.domu .akce .pravy {
+		width: 20%
+	}
+
+	section>.domu .akce .levy {
+		width: 80%;
+	}
+
+	section>.domu .akce .pravy .lista {
+		display: none;
+	}
+}
+
+/* DOMA - náš tip*/
+
+section>.domu .tip {
+	display: flex;
+	justify-content: center;
+	margin-top: 3em;
+}
+
+section>.domu .tip .container {
+	display: flex;
+	column-gap: 2.5em;
+	align-items: center;
+
+}
+
+section>.domu .tip .container .fotky {
+	display: flex;
+	column-gap: 2.5em;
+}
+
+section>.domu .tip .container .fotky img {
+	box-shadow: 15px 15px #805F49;
+}
+
+section>.domu .tip .container .text h2 {
+	font-size: 2em;
+}
+
+section>.domu .tip .container .text p {
+	margin-top: 1em;
+	font-size: 1.1em;
+}
+
+@media (max-width: 1000px) {
+	section>.domu .tip .container {
+		flex-direction: column;
+		row-gap: 3em;
+		align-items: initial;
+	}
+
+	section>.domu .tip .container .fotky {
+		justify-content: space-evenly;
+	}
+
+	section>.domu .tip .container .fotky img {
+		width: 30vw;
+		height: 45vw;
+	}
+}
+
+/* NABIDKA - obsah*/
+
+section>.nabidka .obsah {
+	display: flex;
+	justify-content: center;
+}
+
+section>.nabidka .obsah .boxy {
+	margin-top: 3em;
+}
+
+section>.nabidka .obsah .boxy .karta {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 2em;
+}
+
+section>.nabidka .obsah .boxy .karta .obrazek {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "obrazek";
+	align-items: center;
+	justify-items: center;
+}
+
+section>.nabidka .obsah .boxy .karta .obrazek h2 {
+	grid-area: obrazek;
+	z-index: 1;
+	color: white;
+	font-size: 4em;
+	text-shadow: 2px 2px 5px black;
+	text-transform: uppercase;
+}
+
+section>.nabidka .obsah .boxy .karta .obrazek img {
+	grid-area: obrazek;
+}
+
+section>.nabidka .obsah .boxy .karta .cenik {
+	line-height: 150%;
+	font-size: 1.3em;
+}
+
+section>.nabidka .obsah .boxy .karta .cenik th {
+	text-align: right;
+	font-weight: bold;
+	padding-right: 1.5em;
+}
+
+@media (max-width: 1000px) {
+	section>.nabidka .obsah .boxy .karta {
+		flex-direction: column;
+		row-gap: 1em;
+	}
+
+	section>.nabidka .obsah .boxy .karta .cenik td {
+		text-align: right;
+	}
+}
+
+@media (max-width: 550px) {
+	section>.nabidka .obsah .boxy .karta .obrazek img {
+		width: 90vw;
+		height: 60vw;
+	}
+
+	section>.nabidka .obsah .boxy .karta .obrazek h2 {
+		font-size: 10vw;
+	}
+}
+
+/* GALERIE - obsah*/
+
+section>.galerie .obsah {
+	display: flex;
+	justify-content: center;
+}
+
+section>.galerie .obsah .fotky {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1em;
+	margin-top: 3em;
+}
+
+/* REZERVACE - obsah*/
+
+section>.rezervace .obsah {
+	display: flex;
+	justify-content: center;
+}
+
+section>.rezervace .obsah .kontakt {
+	text-align: center;
+	margin-top: 2em;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+section>.rezervace .obsah .kontakt a {
+	text-decoration: none;
+	color: #805F49;
+}
+
+section>.rezervace .obsah .kontakt a:hover {
+	text-decoration: underline;
+}
+
+section>.rezervace .obsah .kontakt li i {
+	margin-right: 0.4em;
+}
+
+/* REZERVACE - formulář*/
+
+section>.rezervace .obsah .formular {
+	display: flex;
+	justify-content: center;
+	margin-top: 3em;
+}
+
+section>.rezervace .obsah form {
+	width: 80%;
+}
+
+section>.rezervace .obsah form .prvek {
+	width: 100%;
+	font-size: 2em;
+	padding: 0.3em;
+	padding-top: 1em;
+	transition: all 0.2s;
+	font-family: Arial;
+}
+
+
+section>.rezervace .obsah form .radka {
+	position: relative;
+	margin-top: 1em;
+}
+
+section>.rezervace .obsah form .prvek:placeholder-shown {
+	padding: 0.3em;
+}
+
+section>.rezervace .obsah form label {
+	position: absolute;
+	top: 0.5em;
+	left: 15px;
+	color: #805F49;
+	font-weight: bold;
+	transition: all 0.2s;
+}
+
+section>.rezervace .obsah form .prvek:placeholder-shown+label {
+	left: 15px;
+	font-size: 2em;
+	color: rgb(186, 186, 186);
+}
+
+section>.rezervace .obsah form button {
+	border-radius: 10px;
+	padding: 1em 2em;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+/* KONTAKT - info*/
+
+section > .kontakt .info {
+	display: flex;
+	justify-content: center;
+}
+
+section > .kontakt .info .informace {
+	display: flex;
+	justify-content: space-around;
+	line-height: 150%;
+	font-size: 1.2em;
+	
+}
+
+section > .kontakt .info .informace h2 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+section > .kontakt .info .informace a {
+	text-decoration: none;
+	color: #805F49;
+}
+
+section > .kontakt .info .informace a:hover {
+	text-decoration: underline;
+}
+
+section > .kontakt .info .informace .otevreno th {
+	text-align: right;
+	font-weight: bold;
+	padding-right: 1em;
+}
+
+section>.kontakt .info .informace .kontakt li i {
+	margin-right: 0.4em;
+}
+
+/* KONTAKT - mapa*/
+
+section > .kontakt .mapa {
+	margin-top: 3em;
+}
+/* KONTAKT - formular*/
+
+section > .kontakt .obsah  {
+	display: flex;
+	justify-content: center;
+	margin-top: 3em;
+}
+
+section > .kontakt .obsah  h2 {
+	font-size: 2em;
+	margin: 0.5em 0;
+	text-align: center;
+}
+
+section>.kontakt .obsah .formular {
+	display: flex;
+	justify-content: center;
+	margin-top: 3em;
+}
+
+section>.kontakt .obsah form {
+	width: 80%;
+}
+
+section>.kontakt .obsah form .prvek {
+	width: 100%;
+	font-size: 2em;
+	padding: 0.3em;
+	padding-top: 1em;
+	transition: all 0.2s;
+	font-family: Arial;
+}
+
+
+section>.kontakt .obsah form .radka {
+	position: relative;
+	margin-top: 1em;
+}
+
+section>.kontakt .obsah form .prvek:placeholder-shown {
+	padding: 0.3em;
+}
+
+section>.kontakt .obsah form label {
+	position: absolute;
+	top: 0.5em;
+	left: 15px;
+	color: #805F49;
+	font-weight: bold;
+	transition: all 0.2s;
+}
+
+section>.kontakt .obsah form .prvek:placeholder-shown+label {
+	left: 15px;
+	font-size: 2em;
+	color: rgb(186, 186, 186);
+}
+
+section>.kontakt .obsah form button {
+	border-radius: 10px;
+	padding: 1em 2em;
+	font-size: 1.3em;
+	font-weight: bold;
+}
