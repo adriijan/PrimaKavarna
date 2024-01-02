@@ -1,0 +1,11 @@
+# komentáře pomocí hashe
+
+# zapnutí modulu pro přepisování URL:
+
+RewriteEngine On
+
+# pokud přijde požadavek na jakékoliv url, co neexistuje (např./kontakt), tak místo toho změnit ULR na index.php?stranka=ToCoJevURL 
+	# např. /kontakt se změní na /index.php?stranka=kontakt
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.+) index.php?stranka=$1 [L,QSA]

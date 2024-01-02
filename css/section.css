@@ -1,0 +1,477 @@
+#content {
+	padding-bottom: 3em;
+}
+
+#content h1 {
+	font-size: 5em;
+	text-align: center;
+	margin: 0.5em 0;
+}
+
+#content p {
+	font-size: 1.2em;
+	line-height: 150%;
+	text-align: justify;
+	text-indent: 1em;
+}
+
+/* DOMU - onas*/
+
+#content>.domu .onas {
+	display: flex;
+	justify-content: center;
+}
+
+#content>.domu .onas .boxy {
+	display: flex;
+	justify-content: space-between;
+	margin: 3em 0;
+
+}
+
+#content>.domu .onas .boxy .karta {
+	flex-basis: 0;
+	text-align: center;
+}
+
+#content>.domu .onas .boxy .karta h2 {
+	font-size: 2em;
+	margin: 1em 0;
+	border-bottom: 1px solid black;
+	padding-bottom: 0.5em;
+	display: inline-block;
+}
+
+#content>.domu .onas .boxy .karta a {
+	text-decoration: none;
+	color: black;
+	padding: 1em 2em;
+	border: 1px solid rgb(189, 189, 189);
+	border-radius: 10px;
+	display: inline-block;
+	margin-top: 3em;
+}
+
+#content>.domu .onas .boxy .karta a:hover {
+	border: 1px solid black;
+	transition: all 0.5s ease;
+}
+
+#content>.domu .onas .boxy .karta a i {
+	margin-left: 1em;
+	transition: all 0.5s ease;
+}
+
+#content>.domu .onas .boxy .karta a:hover i {
+	transform: translateX(10px);
+}
+
+@media (max-width: 1035px) {
+
+
+	#content>.domu .onas .boxy {
+		flex-direction: column;
+		row-gap: 4em;
+	}
+
+	#content>.domu .onas .boxy .karta {
+		display: flex;
+		column-gap: 2em;
+	}
+
+	#content>.domu .onas .boxy .karta h2 {
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 700px) {
+	#content>.domu .onas .boxy .karta {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#content>.domu .onas .boxy .karta h2 {
+		margin-top: 1em;
+	}
+}
+
+/* DOMU - akce*/
+
+#content>.domu .akce {
+	display: flex;
+	margin-top: 1em;
+}
+
+#content>.domu .akce .levy {
+	width: 50%;
+	background-color: #A0785D;
+	display: flex;
+	justify-content: flex-end;
+	padding: 2em;
+	text-align: right;
+	color: white;
+}
+
+#content>.domu .akce .levy .boxy {
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5em;
+
+}
+
+#content>.domu .akce .levy .boxy h2 {
+	margin: 0.5em;
+	font-size: 2em;
+}
+
+
+#content>.domu .akce .pravy {
+	width: 50%;
+	background: url(../img/zrnka-kavy.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	display: flex;
+}
+
+#content>.domu .akce .pravy .lista {
+	background-color: rgb(160, 120, 93, 0.7);
+	width: 20%;
+}
+
+@media (max-width: 700px) {
+	#content>.domu .akce .pravy {
+		width: 20%
+	}
+
+	#content>.domu .akce .levy {
+		width: 80%;
+	}
+
+	#content>.domu .akce .pravy .lista {
+		display: none;
+	}
+}
+
+/* DOMA - náš tip*/
+
+#content>.domu .tip {
+	display: flex;
+	justify-content: center;
+	margin-top: 3em;
+}
+
+#content>.domu .tip .container {
+	display: flex;
+	column-gap: 2.5em;
+	align-items: center;
+
+}
+
+#content>.domu .tip .container .fotky {
+	display: flex;
+	column-gap: 2.5em;
+}
+
+#content>.domu .tip .container .fotky img {
+	box-shadow: 15px 15px #805F49;
+}
+
+#content>.domu .tip .container .text h2 {
+	font-size: 2em;
+}
+
+#content>.domu .tip .container .text p {
+	margin-top: 1em;
+	font-size: 1.1em;
+}
+
+@media (max-width: 1000px) {
+	#content>.domu .tip .container {
+		flex-direction: column;
+		row-gap: 3em;
+		align-items: initial;
+	}
+
+	#content>.domu .tip .container .fotky {
+		justify-content: space-evenly;
+	}
+
+	#content>.domu .tip .container .fotky img {
+		width: 30vw;
+		height: 45vw;
+	}
+}
+
+/* NABIDKA - obsah*/
+
+#content>.nabidka .obsah {
+	display: flex;
+	justify-content: center;
+}
+
+#content>.nabidka .obsah .boxy {
+	margin-top: 3em;
+}
+
+#content>.nabidka .obsah .boxy .karta {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 2em;
+}
+
+#content>.nabidka .obsah .boxy .karta .obrazek {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "obrazek";
+	align-items: center;
+	justify-items: center;
+}
+
+#content>.nabidka .obsah .boxy .karta .obrazek h2 {
+	grid-area: obrazek;
+	z-index: 1;
+	color: white;
+	font-size: 4em;
+	text-shadow: 2px 2px 5px black;
+	text-transform: uppercase;
+}
+
+#content>.nabidka .obsah .boxy .karta .obrazek img {
+	grid-area: obrazek;
+}
+
+#content>.nabidka .obsah .boxy .karta .cenik {
+	line-height: 150%;
+	font-size: 1.3em;
+}
+
+#content>.nabidka .obsah .boxy .karta .cenik th {
+	text-align: right;
+	font-weight: bold;
+	padding-right: 1.5em;
+}
+
+@media (max-width: 1000px) {
+	#content>.nabidka .obsah .boxy .karta {
+		flex-direction: column;
+		row-gap: 1em;
+	}
+
+	#content>.nabidka .obsah .boxy .karta .cenik td {
+		text-align: right;
+	}
+}
+
+@media (max-width: 550px) {
+	#content>.nabidka .obsah .boxy .karta .obrazek img {
+		width: 90vw;
+		height: 60vw;
+	}
+
+	#content>.nabidka .obsah .boxy .karta .obrazek h2 {
+		font-size: 10vw;
+	}
+}
+
+/* GALERIE - obsah*/
+
+#content>.galerie .obsah {
+	display: flex;
+	justify-content: center;
+}
+
+.fotogalerie {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1em;
+	margin-top: 3em;
+}
+
+/* REZERVACE - obsah*/
+
+#content>.rezervace .obsah {
+	display: flex;
+	justify-content: center;
+}
+
+#content>.rezervace .obsah .kontakt {
+	text-align: center;
+	margin-top: 2em;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+#content>.rezervace .obsah .kontakt a {
+	text-decoration: none;
+	color: #805F49;
+}
+
+#content>.rezervace .obsah .kontakt a:hover {
+	text-decoration: underline;
+}
+
+#content>.rezervace .obsah .kontakt li i {
+	margin-right: 0.4em;
+}
+
+/* REZERVACE - formulář*/
+
+#content>.rezervace .obsah h2 {
+	font-size: 2em;
+	text-align: center;
+}
+
+/* KONTAKT - info*/
+
+#content>.kontakt .info {
+	display: flex;
+	justify-content: center;
+}
+
+#content>.kontakt .info .informace {
+	display: flex;
+	justify-content: space-around;
+	line-height: 150%;
+	font-size: 1.2em;
+
+}
+
+#content>.kontakt .info .informace h2 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+#content>.kontakt .info .informace a {
+	text-decoration: none;
+	color: #805F49;
+}
+
+#content>.kontakt .info .informace a:hover {
+	text-decoration: underline;
+}
+
+#content>.kontakt .info .informace .otevreno th {
+	text-align: right;
+	font-weight: bold;
+	padding-right: 1em;
+}
+
+#content>.kontakt .info .informace .kontakt li i {
+	margin-right: 0.4em;
+}
+
+/* KONTAKT - mapa*/
+
+#content>.kontakt .mapa {
+	margin-top: 3em;
+}
+
+/* KONTAKT - formular*/
+
+#kontaktni-formular  {
+	display: flex;
+	justify-content: center;
+	margin-top: 3em;
+}
+
+#kontaktni-formular  h2 {
+	font-size: 2em;
+	margin: 0.5em 0;
+	text-align: center;
+}
+
+#kontaktni-formular  .formular {
+	display: flex;
+	justify-content: center;
+	margin-top: 3em;
+}
+
+#kontaktni-formular  form {
+	width: 80%;
+}
+
+#kontaktni-formular  form .prvek {
+	width: 100%;
+	font-size: 2em;
+	padding: 0.3em;
+	padding-top: 1em;
+	transition: all 0.2s;
+	font-family: Arial;
+}
+
+
+#kontaktni-formular  form .radka {
+	position: relative;
+	margin-top: 1em;
+}
+
+#kontaktni-formular  form .prvek:placeholder-shown {
+	padding: 0.3em;
+}
+
+#kontaktni-formular  form label {
+	position: absolute;
+	top: 0.5em;
+	left: 15px;
+	color: #805F49;
+	font-weight: bold;
+	transition: all 0.2s;
+}
+
+#kontaktni-formular  form .prvek:placeholder-shown+label {
+	left: 15px;
+	font-size: 2em;
+	color: rgb(186, 186, 186);
+}
+
+#kontaktni-formular  form button {
+	border-radius: 10px;
+	padding: 1em 2em;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+#kontaktni-formular  form .status {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: grid;
+	align-items: center;
+	font-size: 50px;
+}
+
+#kontaktni-formular  form .status .spravne {
+	display: none;
+}
+
+#kontaktni-formular  form .status .spatne {
+	display: none;
+}
+
+#kontaktni-formular  form .status.ok .spravne {
+	color: green;
+	display: block;
+}
+
+#kontaktni-formular form .status.chyba .spatne {
+	color: red;
+	display: block;
+}
+
+
+
+
+
+
+
+/* STRÁNKA NEEXISTUJE*/
+
+#content>.stranka-neexistuje .obrazek {
+	display: flex;
+	justify-content: center;
+}
