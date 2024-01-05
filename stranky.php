@@ -12,7 +12,7 @@ $db = new PDO(
 
 
 class Stranka
-{
+{ 
 	public $id;
 	public $titulek;
 	public $menu;
@@ -110,9 +110,8 @@ $seznamStranek = [
 
 $seznamStranek = [];
 // pole $seznamStranek naplníme dynamicky z databáze
-$dotaz = $db->prepare("SELECT id, titulek, menu FROM stranka ORDER BY poradi");
+$dotaz = $db->prepare("SELECT id, titulek, menu FROM stranka ORDER BY poradi"); 
 $dotaz->execute();
-
 $stranky = $dotaz->fetchAll();
 // var_dump($stranky);
 
