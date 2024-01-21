@@ -24,7 +24,7 @@ foreach ($soubory as $soubor) {
 
 		echo "
 			<a href='$celaCesta' data-pswp-width=$sirka data-pswp-height=$vyska>
-			<img src='$celaCesta' height=200>";
+			<img src='$celaCesta' height=200></a>";
 	}
 }
 echo "</div>";
